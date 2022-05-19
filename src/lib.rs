@@ -1,7 +1,7 @@
 //!
 //! Provides read-only counterpart to standard [`Cell`] type.
-//! Unlike [`Cell`], [`ReadCell`] cannot be used to mutate inner value, just like `&T`,
-//! but similar to [`Cell`] it cannot be used to get `&T` to the inner value.
+//! Unlike [`Cell`], [`ReadCell`] cannot be used to mutate inner value, just like [`&T`],
+//! but similar to [`Cell`] it cannot be used to get [`&T`] to the inner value.
 //!
 //! While [`&Cell<T>`] references and [`&T`] references to the same value cannot coexist,
 //! [`&ReadCell<T>`] reference and [`&Cell<T>`] reference to the same value can coexist.
@@ -288,7 +288,6 @@ impl<T, const N: usize> ReadCell<[T; N]> {
     /// # Examples
     ///
     /// ```
-    /// #![feature(as_array_of_cells)]
     /// use read_cell::ReadCell;
     ///
     /// let mut array: [i32; 3] = [1, 2, 3];
