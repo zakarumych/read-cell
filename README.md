@@ -6,6 +6,21 @@
 [![MIT/Apache](https://img.shields.io/badge/license-MIT%2FApache-blue.svg?style=for-the-badge)](COPYING)
 ![loc](https://img.shields.io/tokei/lines/github/zakarumych/read-cell?style=for-the-badge)
 
+
+Provides read-only counterpart to standard [`Cell`] type.
+Unlike [`Cell`], [`ReadCell`] cannot be used to mutate inner value, just like [`&T`],
+but similar to [`Cell`] it cannot be used to get [`&T`] to the inner value.
+
+While [`&Cell<T>`] references and [`&T`] references to the same value cannot coexist,
+[`&ReadCell<T>`] reference and [`&Cell<T>`] reference to the same value can coexist.
+As well as [`&ReadCell<T>`] reference and [`&T`] reference to the same value can coexist.
+
+
+[`Cell`]: https://doc.rust-lang.org/nightly/core/cell/struct.Cell.html
+[`&Cell<T>`]: https://doc.rust-lang.org/nightly/core/cell/struct.Cell.html
+[`&ReadCell<T>`]: https://docs.rs/read-cell/latest/read_cell/struct.ReadCell.html
+[`&T`]: https://doc.rust-lang.org/nightly/core/primitive.reference.html
+
 ## License
 
 Licensed under either of
