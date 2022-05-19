@@ -17,6 +17,7 @@ As well as [`&ReadCell<T>`] reference and [`&T`] reference to the same value can
 
 
 [`Cell`]: https://doc.rust-lang.org/nightly/core/cell/struct.Cell.html
+[`ReadCell`]: https://docs.rs/read-cell/latest/read_cell/struct.ReadCell.html
 [`&Cell<T>`]: https://doc.rust-lang.org/nightly/core/cell/struct.Cell.html
 [`&ReadCell<T>`]: https://docs.rs/read-cell/latest/read_cell/struct.ReadCell.html
 [`&T`]: https://doc.rust-lang.org/nightly/core/primitive.reference.html
