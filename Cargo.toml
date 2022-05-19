@@ -1,0 +1,13 @@
+[package]
+name = "read-cell"
+version = "0.1.0"
+edition = "2021"
+authors = ["Zakarum <zakarumych@ya.ru>"]
+license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/read-cell"
+homepage = "https://github.com/zakarumych/read-cell"
+repository = "https://github.com/zakarumych/read-cell"
+readme = "README.md"
+description = "Read-only Cell counterpart"
+keywrods = ["no-std", "cell"]
+categories = ["concurrency", "no-std", "rust-patterns"]
